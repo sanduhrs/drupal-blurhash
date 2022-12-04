@@ -1,0 +1,3 @@
+services:
+  blurhash:
+    class: Drupal\blurhash\BlurhashService

@@ -1,0 +1,5 @@
+name: Blurhash
+type: module
+description: Generates colorful preview thumbnails for attachments.
+package: Image
+core_version_requirement: ^9 || ^10

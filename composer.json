@@ -1,0 +1,15 @@
+{
+    "name": "drupal/blurhash",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "sanduhrs",
+            "email": "stefan@auditor.email"
+        }
+    ],
+    "require": {
+        "ext-gd": "*",
+        "kornrunner/blurhash": "^1.2"
+    }
+}

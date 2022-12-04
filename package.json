@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "blurhash": "^2.0.4"
+  }
+}

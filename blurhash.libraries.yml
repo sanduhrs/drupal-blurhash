@@ -1,0 +1,9 @@
+blurhash:
+  remote: https://github.com/woltapp/blurhash
+  version: 2.0.4
+  license:
+    name: MIT
+    url: https://raw.githubusercontent.com/woltapp/blurhash/master/License.md
+    gpl-compatible: true
+  js:
+    js/blurhash.js: { attributes: { type: module } }

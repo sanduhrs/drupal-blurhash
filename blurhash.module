@@ -1,0 +1,35 @@
+<?php
+
+use kornrunner\Blurhash\Blurhash;
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function blurhash_preprocess_image(&$variables) {
+  $image = @imagecreatefromstring(@file_get_contents($variables['uri']));
+
+  if (!$image instanceof \GdImage) {
+    return;
+  }
+
+  $width = imagesx($image);
+  $height = imagesy($image);
+
+  $pixels = [];
+  for ($y = 0; $y < $height; ++$y) {
+    $row = [];
+    for ($x = 0; $x < $width; ++$x) {
+      $index = imagecolorat($image, $x, $y);
+      $colors = imagecolorsforindex($image, $index);
+
+      $row[] = [$colors['red'], $colors['green'], $colors['blue']];
+    }
+    $pixels[] = $row;
+  }
+
+  $components_x = 4;
+  $components_y = 3;
+  $blurhash = Blurhash::encode($pixels, $components_x, $components_y);
+
+  $variables['attributes']['data-blurhash'] = [$blurhash];
+}
