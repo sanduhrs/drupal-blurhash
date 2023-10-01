@@ -7,6 +7,8 @@ blurhash:
     gpl-compatible: true
   css:
     layout:
-      css/blurhash.css: {}
+      css/blurhash-layout.css: {}
+    theme:
+      css/blurhash-olivero.css: {}
   js:
     js/blurhash.js: { attributes: { type: module } }

@@ -28,8 +28,9 @@ function blurhash_preprocess_image(&$variables) {
   }
 
   $components_x = 4;
-  $components_y = 3;
+  $components_y = 4;
   $blurhash = Blurhash::encode($pixels, $components_x, $components_y);
 
   $variables['attributes']['data-blurhash'] = [$blurhash];
+  $variables['#attached']['library'][] = 'blurhash/blurhash';
 }
