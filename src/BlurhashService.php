@@ -67,6 +67,7 @@ class BlurhashService implements BlurhashServiceInterface {
    */
   public static function fromFile(File $file): static {
     // TODO: Implement fromFile() method.
+    throw new Exception('Not implemented');
   }
 
 }
