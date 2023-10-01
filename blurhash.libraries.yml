@@ -5,5 +5,8 @@ blurhash:
     name: MIT
     url: https://raw.githubusercontent.com/woltapp/blurhash/master/License.md
     gpl-compatible: true
+  css:
+    layout:
+      css/blurhash.css: {}
   js:
     js/blurhash.js: { attributes: { type: module } }
