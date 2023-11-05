@@ -1,0 +1,22 @@
+{
+    "require": {
+        "npm-asset/blurhash": "2.0.5"
+    },
+    "repositories": {
+        "npm-asset/blurhash": {
+            "type": "package",
+            "package": {
+                "name": "npm-asset/blurhash",
+                "version": "2.0.5",
+                "type": "drupal-library",
+                "dist": {
+                    "type": "tar",
+                    "url": "https://registry.npmjs.org/blurhash/-/blurhash-2.0.5.tgz"
+                },
+                "license": [
+                    "MIT"
+                ]
+            }
+        }
+    }
+}
